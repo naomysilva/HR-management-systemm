@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+form {
+  margin-bottom: 20px;
+  display: none; /* Escondido por padrão, será mostrado se for Leticia */
+}
+
+#registerForm, #loginForm {
+  display: block;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+.person-list {
+  margin-top: 20px;
+}
+.person-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.person-item button {
+  margin-right: 10px;
+  background-color: #28a745;
+}
+.person-item button .delete {
+  background-color: #dc3545 !important;
+  display: none; /* Escondido por padrão, será mostrado se for Leticia */
+}
+#userSection {
+  margin-bottom: 20px;
+}
+

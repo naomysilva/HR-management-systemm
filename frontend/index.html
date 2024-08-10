@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Person Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Person Manager</h1>
+
+    <div id="userSection">
+      <label for="username">Enter Username:</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter your username"
+        required
+      />
+      <button onclick="setUser()">Set User</button>
+    </div>
+
+    <h2>Create/Update Person</h2>
+    <form id="personForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="number" id="salary" placeholder="Salary" required />
+      <input
+        type="text"
+        id="approved"
+        placeholder="Approved (true/false)"
+        required
+      />
+      <input
+        type="text"
+        id="trainee"
+        placeholder="Trainee (true/false)"
+        required
+      />
+      <input
+        type="date"
+        id="dataInicio"
+        placeholder="Start Date"
+        required
+      />
+      <input
+        type="date"
+        id="dataFim"
+        placeholder="End Date"
+        required
+      />
+      <input type="hidden" id="createdBy" />
+      <button type="submit">Save Person</button>
+    </form>
+
+    <h2>People List</h2>
+    <div id="personList" class="person-list"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
